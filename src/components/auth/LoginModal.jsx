@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 
-import { LoginForm } from "../login-form"
+import { LoginForm } from "../Forms/login-form"
 
 export default function LoginModal({ btn }) {
     return (

@@ -3,7 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { SignupForm } from '@/components/signup-form'
+import { SignupForm } from '@/components/Forms/signup-form'
 import axios from 'axios'
 import { toast } from "sonner"
 import { Link, useNavigate } from 'react-router-dom'
