@@ -7,7 +7,8 @@ import { toast } from 'sonner'
 import axios from 'axios'
 import { useQueryClient } from '@tanstack/react-query'
 import { useContext } from 'react'
-
+import Avatar from '@/assets/avatar.svg'
+import myAvatar from '@/assets/myAvatar.svg'
 
 export default function ReviewsCard({ review }) {
     const { token, login } = useContext(AuthContext)
@@ -41,7 +42,8 @@ export default function ReviewsCard({ review }) {
                     <div className='flex items-center gap-5 justify-between'>
                         <div className='flex items-start gap-3'>
                             <div className=' h-12 w-12 flex items-center justify-center border rounded-4xl bg-amber-500/35 flex-shrink-0'>
-                                <img src="https://notion-avatars.netlify.app/api/avatar/?face=8&nose=3&mouth=17&eyes=4&eyebrows=1&glasses=1&hair=2&accessories=0&details=0&beard=0&halloween=0&christmas=0" alt="Notion Avatar" />                            </div>
+                                <img src={Avatar} alt="Notion Avatar" />
+                            </div>
                             <div className='flex flex-col'>
                                 <span className='text-sm '>{review?.user.name}</span>
                                 <div className="flex items-center gap-0.5 ">
@@ -107,7 +109,7 @@ export default function ReviewsCard({ review }) {
                     <div className='flex items-center gap-5 justify-between'>
                         <div className='flex items-start gap-3'>
                             <div className=' h-12 w-12 flex items-center justify-center border rounded-4xl bg-primary/35 flex-shrink-0'>
-                                <img src="https://notion-avatars.netlify.app/api/avatar/?face=10&nose=13&mouth=17&eyes=9&eyebrows=0&glasses=9&hair=5&accessories=0&details=0&beard=0&halloween=0&christmas=0" alt="Notion Avatar" />
+                                <img src={Avatar} alt="Notion Avatar" />
                             </div>
                             <div className='flex flex-col'>
                                 <span className='text-sm '>{review?.user.name}</span>

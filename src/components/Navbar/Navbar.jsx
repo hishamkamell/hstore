@@ -9,6 +9,7 @@ import { ThemeProviderContext } from '@/components/ui/theme';
 import { AuthContext } from '../../Context/AuthContext';
 import { CartContext } from '@/Context/CartContext';
 import { Badge } from "@/components/ui/badge"
+import myAvatar from '@/assets/myAvatar.svg'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -90,7 +91,7 @@ export default function Navbar() {
               <DropdownMenu>
                 <DropdownMenuTrigger render={<Button variant='outline' size='sm' className='flex items-center gap-2 bg-primary dark:bg-primary text-background' >
                   <div className=' h-10 w-10 flex items-center justify-center rounded-full bg-amber-500 border-5 border-background  flex-shrink-0'>
-                    <img src="https://notion-avatars.netlify.app/api/avatar/?face=8&nose=3&mouth=17&eyes=4&eyebrows=1&glasses=1&hair=2&accessories=0&details=0&beard=0&halloween=0&christmas=0" alt="Notion Avatar" />
+                    <img src={myAvatar} alt="Notion Avatar" />
                   </div>
                   <span className='text-xs'>{user?.decoded.name}</span>
 

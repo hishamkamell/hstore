@@ -16,6 +16,7 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import UserOrders from "../Orders/Orders"
+import myAvatar from '@/assets/myAvatar.svg'
 
 
 export default function Profile() {
@@ -56,7 +57,7 @@ export default function Profile() {
                 </div>
                 <div className=" border border-primary rounded-lg p-4 px-8 flex items-center gap-5 ">
                     <div className=' h-16 w-16 flex items-center justify-center border rounded-full bg-amber-500/35 flex-shrink-0'>
-                        <img src="https://notion-avatars.netlify.app/api/avatar/?face=8&nose=3&mouth=17&eyes=4&eyebrows=1&glasses=1&hair=2&accessories=0&details=0&beard=0&halloween=0&christmas=0" alt="Notion Avatar" />
+                        <img src={myAvatar} alt="Notion Avatar" />
                     </div>
                     <div className=" flex justify-between items-center w-full">
                         <div className="flex flex-col">
